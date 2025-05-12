@@ -1,20 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>USCIS</title>
-  <link rel="icon" type="image/png" href="FOTOS/images.png">
-  <script src="idiomas.js" defer></script>
-</head>
-<body>
-  <!-- Selector de idioma -->
-  <select id="selector-idioma" onchange="cambiarIdioma()">
-    <option value="es">Español</option>
-    <option value="en">English</option>
-  </select>
 
-  <!-- Contenido traducible -->
-  <h1 id="titulo">Bienvenido</h1>
-  <p id="descripcion">Esta es una página web multilingüe.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USCIS</title>
+    <link rel="icon" type="image/png" href="FOTOS/images.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Script para el widget de Google Translate -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es',  // Idioma por defecto
+                includedLanguages: 'es,en',  // Idiomas disponibles
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body>
+    <!-- Selector de idioma -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Formularios</a></li>
+                <li><a href="#">Ciudadanía</a></li>
+                <li><a href="#">Residencia Permanente</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <!-- Widget de Google Translate -->
+            <div id="google_translate_element"></div>
+        </div>
+    </nav>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Formularios</a></li>
+                <li><a href="#">Ciudadanía</a></li>
+                <li><a href="#">Residencia Permanente</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección principal -->
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h2>Bienvenido al Servicio de Ciudadanía e Inmigración de EE. UU.</h2>
+                <p>Proporcionamos información y servicios para ayudarle en su proceso de inmigración.</p>
+            </section>
+
+            <section class="highlighted">
+                <h3>Secciones destacadas</h3>
+                <div class="cards">
+                    <div class="card">
+                        <h4>Formulario I-90</h4>
+                        <p>Solicite la renovación de su tarjeta de residencia.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Ciudadanía</h4>
+                        <p>Aprenda cómo convertirse en ciudadano de EE. UU.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Residencia Permanente</h4>
+                        <p>Obtenga información sobre la residencia permanente.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 USCIS. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
