@@ -27,9 +27,10 @@ body {
 }
 
 #bandera img {
-  width: 50px; /* Ajusta el tamaño de la bandera */
+  width: 5px; /* Ajusta el tamaño de la bandera */
   height: auto;
-  margin-right: 20px;
+  margin-right: 10px;
+  
 }
 
 #mensaje h2 {
