@@ -11,6 +11,37 @@ body {
   color: #333;
 }
 
+/* Estilo para la sección de información del sitio */
+#info-sitio {
+  background-color: #003366;
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+#info-sitio .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#bandera img {
+  width: 50px; /* Ajusta el tamaño de la bandera */
+  height: auto;
+  margin-right: 20px;
+}
+
+#mensaje h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#mensaje p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
 /* Barra de navegación */
 nav {
   background-color: #f2f2f2;
